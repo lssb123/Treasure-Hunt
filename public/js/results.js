@@ -56,16 +56,16 @@ if(attonlev1==1 && attonlev2==1 && attonlev3==1 && attonlev4==1) {
     acc=(x1+x2+x3+x4)/4;
     console.log(acc)
     if (acc>=90) {
-        document.getElementById("res").innerHTML=`<h2>Excellent</h2>`;
+        document.getElementById("res").innerHTML=`<h2>Creative Skills:Excellent<br>Logical Skills:Excellent<br>Problem Understanding Skills:Excellent</h2><br>`;
     }
-    else if (acc>=75) {
-        document.getElementById("res").innerHTML=`<h2>good</h2>`;
+    else if (acc>=75 && acc<90) {
+        document.getElementById("res").innerHTML=`<h2>Creative Skills:Good<br>Logical Skills:Good<br>Problem Understanding Skills:Good</h2><br>`;
     }
-    else if(acc >50 && acc<=75) {
-        document.getElementById("res").innerHTML=`<h2>Average/<h2>`;
+    else if(acc>=50 && acc<75) {
+        document.getElementById("res").innerHTML=`<h2>Creative Skills:Average<br>Logical Skills:Average<br>Problem Understanding Skills:Average</h2><br>`;
     }
     else {
-        document.getElementById("res").innerHTML=`<h2>Better Luck Next Time</h2>`;
+        document.getElementById("res").innerHTML=`<h2>You need to work hard.</h2>`;
     }
     // const results = {
     //     accuracy:acc

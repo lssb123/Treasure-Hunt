@@ -50,6 +50,15 @@ function checkAnswer() {
 }
 
 function exitbutton() {
+  localStorage.clear("count1", 0);
+        localStorage.clear("count2", 0);
+        localStorage.clear("count3", 0);
+        localStorage.clear("count4", 0);
+        localStorage.clear("count5", 0);
+        localStorage.clear("lev1",0);
+        localStorage.clear("lev2",0);
+        localStorage.clear("lev3",0);
+        localStorage.clear("lev4",0);
   alert("press ok to redirect to the start of the game");
   window.location.href = "/intro";
 }
