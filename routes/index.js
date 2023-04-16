@@ -28,7 +28,7 @@ router.get("/admindashboard", (req, res) => {
 router.post("/admin", (req, res, next) => {
 
 	admin.find({},(err,data)=>{
-		console.log(data)
+		// console.log(data)
 	})
 
 
@@ -262,7 +262,7 @@ router.get("/results", (req, res) => {
 
 router.post("/results", (req, res) => {
   // console.log(req.body);
-  console.log(req.url);
+  // console.log(req.url);
   let id = req.sessionID;
   sessions.find({ _id: id }, (err, data) => {
     let userid = JSON.parse(data[0].session).userId;
@@ -285,7 +285,7 @@ router.post("/results", (req, res) => {
       if (req.body.level4 == null) {
         req.body.level4 = 0;
       }
-      console.log(req.body);
+      // console.log(req.body);
       let userattempts = new attempts({
         name: details.name,
         email: details.email,

@@ -51,6 +51,8 @@ function exitbutton() {
 }
 
 function skipbutton() {
+  count3=0;
+    localStorage.setItem('count3',0);
   errorMsg.innerText="You skipped the puzzle! Moving to Level 4...";
     errorMsg.style.color="yellow";
   setTimeout(function() {

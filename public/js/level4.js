@@ -122,6 +122,8 @@ function exitbutton() {
 
 
 function skip(){
+  count4=0;
+    localStorage.setItem('count4',0);
 const level1Det = localStorage.getItem('count1')
 const level2Det = localStorage.getItem('count2')
 const level3Det = localStorage.getItem('count3')
@@ -146,6 +148,9 @@ const level4Det = localStorage.getItem('count4')
         let x3=100-l3;
         let x4=100-l4;
         acc = (x1+x2+x3+x4)/4;
+    }
+    else {
+      acc=0;
     }
   const results = {
     level1:localStorage.getItem('count1'),

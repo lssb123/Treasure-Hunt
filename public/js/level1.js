@@ -113,6 +113,8 @@ function checkAnswer() {
   }
 
   function skipbutton() {
+    count1=0;
+    localStorage.setItem('count1',0);
     message.innerText="You skipped the puzzle! Moving to Level 2...";
     message.style.color="yellow";
     setTimeout(function() {
