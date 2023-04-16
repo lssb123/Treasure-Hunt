@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/level2.css">
+    <title>Level 2: Code the color</title>
+</head>
+<body>
+    <%- include('navbar'); %>
+    <div class="level2">
+        <h1 style="font-size: 40px;"><u>Level 2</u></h1>
+        <h2><u>Code the color</u></h2>
+        <P>Decode the color code with the help of the following:
+            <br>
+            It is the color of fire trucks and stop signs.<br>
+            <u>clue 1:</u> The first two digits represent the intensity of red color<br>
+            <u>clue 2:</u> The last digits represents the intensity of green,blue colors<br>
+        </P>
+        <br>
+        <div><h2 class="hello">Attempts:</h2>
+            <div id="attempt"><h2 class="hello">0</h2></div>
+          </div>
+        <input type="text" id="answerInput" placeholder="Enter your answer..."><br>
+        <button onclick="checkAnswer()">Check Answer</button>
+        <button onclick="exitbutton()">Exit Game</button>
+        <button onclick="skipbutton()">Skip</button>
+        <p id="errorMsg"></p>
+      </div>
+      <script src="./js/level2.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    margin:0;
+    padding: 0;
+    color: yellow;
+    background-color: black;
+}
+.level2 {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+    
+  }
+  .hello {
+    display:inline;
+  }
+  #attempt{
+    display:inline;
+  }
+  .level2 h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .level2 p {
+    font-size: 20px;
+    margin-bottom: -9px;
+    line-height: 2.5rem;
+  }
+  
+  .level2 input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 9px;
+  }
+  
+  .level2 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  
+  .level2 button:hover {
+    background-color: #45a049;
+  }
+  
+  .level2 #errorMsg {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+  }

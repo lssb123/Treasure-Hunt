@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Level 3: The Hidden Object</title>
+    <link rel="stylesheet" href="./css/level3.css">
+  </head>
+  <body>
+  <%- include('navbar'); %>
+	<div class="level2">
+        <h1 style="font-size: 40px;"><u>Level 3</u></h1>
+        <h2 class="hu"><u>Find the Hidden Object</u></h2>
+        <P class="go">You Entered into a dark room and you need to find the hidden key to enter the next level.</P>
+            <br>
+            <p><u>clue 1:</u> Every thing is not visible to the human eye and you need to turn on the light.<br>
+        </P>
+        <br>
+        <div><h2 class="hello">Attempts: </h2>
+          <div id="attempt"><h2 class="hello">0</h2></div>
+        </div>
+        <input type="text" id="answerInput" placeholder="Enter your answer..."><br>
+        <button onclick="checkAnswer()">Check Answer</button>
+        <button onclick="exitbutton()">Exit Game</button>
+        <button onclick="skipbutton()">Skip</button>
+
+        <p id="errorMsg"></p>
+		<div id="drag-container">
+			<div id="message"><h1>The Hidden keyWord is: <u>Speed</u></h1></div>
+		  </div>
+      </div>
+		
+
+    <script src="./js/level3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Level 1: Find the correct word</title>
+    <link rel="stylesheet" href="./css/level1.css">
+  </head>
+  <body>
+    <%- include('navbar'); %>
+    <div id="game">
+      <h1><u>Level 1</u></h1>
+      <h2><u>Find the Correct Word</u></h2>
+      <p>The player starts in the foyer of the mansion. The door behind them is locked, and the only way to escape is through a door to the right. However, the door is blocked by a puzzle. The puzzle involves rearranging letters on a board to form a word.</p><p>A clue is hidden on a painting on the wall, which reads <u>"the answer lies in the books."</u></p> <p> The player must rearrange the letters to form the word according to the clue.</p>
+      <div><h2 class="hello">Attempts:   
+        <!-- value -->
+      </h2>
+      <div id="attempt"><h2 class="hello">0</h2></div>
+    </div>
+      <div id="tiles">
+        <div class="tile" id="tile1" value="R">R</div>
+        <div class="tile" id="tile2" value="O">O</div>
+        <div class="tile" id="tile3" value="W">W</div>
+        <div class="tile" id="tile4" value="D">D</div>
+      </div>
+      <input type="text" id="answerInput" placeholder="Enter your answer..." disabled><br>
+      <button id="check-button">Check Answer</button>
+      <button id="exit-button">Exit Game</button>
+      <button onclick="skipbutton()">Skip</button>
+      <div id="message"></div>
+    </div>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="./js/level1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard</title>
+    <style>
+        body {
+            background-color: black;
+            margin:0;
+            padding:0;
+            color: yellow
+        }
+        table,thead,tbody,th,td {
+            border: 1px solid yellow;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <%- include('regnavbar'); %>
+    <center>
+        <h1><u>Admin DashBoard</u></h1><br>
+        <table style="border: 2px solid yellow">
+            <thead>
+                <tr style="height: 30px;">
+                    <th style="width:15%"><center>username</center></th>
+                    <th style="width: 40%"> <center>email</center></th>
+                    <th style="width: 10%"> <center>level1</center></th>
+                    <th style="width: 10%"> <center>level2</center></th>
+                    <th style="width: 10%"> <center>level3</center></th>
+                    <th style="width: 10%"> <center>level4</center></th>
+                    <th style="width: 10%"><center>Date & Time</center></th>
+                    <th style="width: 10%"><center>Accuracy</center></th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0;i<docs.length;i++){ %>
+                <tr style="height: 40px;">
+                    <td><center><%= docs[i].name %></center></td>
+                    <td><center><%= docs[i].email %></center></td> 
+                    <td><center><%= docs[i].level1 %></center></td> 
+                    <td><center><%= docs[i].level2 %></center></td> 
+                    <td><center><%= docs[i].level3 %></center></td> 
+                    <td><center><%= docs[i].level4 %></center></td>
+             <% const x = new Date(docs[i].date) %>
+                    <td><center><%= x.toLocaleString(); %></center></td>
+                    <td><center><%= docs[i].accuracy %></center></td>
+                </tr>
+                <% } %>
+
+                
+                
+
+            </tbody>
+        </table>
+
+            <!-- <% for(let i=0;i<docs.length;i++){ %>
+                <h3><%= docs[i].username %></h3>
+                <h3><%= docs[i].email %></h3>
+                <% } %> -->
+    </center>
+</body>
+</html>

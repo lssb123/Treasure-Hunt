@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: yellow;
+        }
+        .hello {
+            /* display:inline; */
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            margin-top: 50px;;
+        }
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #008000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left:35px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('regnavbar') %>
+    <div class="hello">
+        <center>
+    <h1 style="margin-bottom:20px;">Unauthorised Page</h1>
+    <button onclick="window.location.href='/login'"><a>click to login</a></button>
+</center>
+</div>
+</body>
+</html>

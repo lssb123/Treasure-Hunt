@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: yellow;
+}
+#game {
+  text-align: center;
+  margin-top: -10px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 28px;
+  margin-left: 150px;
+    margin-right:150px;
+    margin-top: 10px;
+}
+
+#tiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;;
+}
+
+.tile {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color:black;
+}
+
+.tile.selected {
+  background-color: #008000;
+  color: #fff;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:35px;
+}
+.hello {
+  display:inline;
+}
+#attempt{
+  display:inline;
+}
+input[type="text"] {
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: not-allowed;
+  background-color: white;
+}
+
+button:hover {
+  background-color: #006600;
+}
+
+#message {
+  font-size: 24px;
+  margin-top: 20px;
+}

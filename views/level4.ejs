@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Level 4: The Hidden Code</title>
+    <link rel="stylesheet" href="./css/level4.css">
+  </head>
+  <body>
+    <%- include('navbar'); %>
+    <div class="container">
+        <h1><u>Level 4</u></h1>
+        <h2 class= "go" style="font-size: 35px;"><u>The Hidden Code</u></h2>
+        <p class="hi1">Code the image by observing it carefully</p>
+        <p class="hi2"><u>clue1:</u> Think as a developer</p>
+      <img id="cityscape" src="images/photo3.jpg" alt="7993">
+      <div class="hey"><h2 class="hello">Attempts:</h2>
+        <div id="attempt"><h2 class="hello">0</h2></div>
+      </div>
+      <p class="guru">Enter the code:</p>
+      <input type="text" id="codeInput" maxlength="4">
+      <br>
+      <button onclick="checkAnswer()">Check Answer</button>
+        <button onclick="exitbutton()">Exit Game</button>
+        <button onclick="skip()">Skip & Calc. Accuracy</button>
+      <p id="errorMsg"></p>
+    </div>
+
+    <script src="./js/level4.js"></script>
+  </body>
+</html>
